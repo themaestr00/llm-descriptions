@@ -1,0 +1,72 @@
+
+Function: transpose_matrix
+
+The function `transpose_matrix` takes a matrix `A` as input and returns its transpose. It creates a new matrix `T` with the same number of columns as `A` has rows, and the same number of rows as `A` has columns. Then it iterates through each element in `A` and sets the corresponding element in `T` to the value of that element. Finally, it returns `T`.
+
+Function: set_element
+
+The `set_element` function sets the value of a matrix element at the specified row and column to the given value. It checks if the row and column indices are within the bounds of the matrix before setting the value, and does nothing otherwise.
+
+Function: log_void_std.string__
+
+The `log` function takes a string reference as an argument and prints it to the console with the prefix "[LOG]: ".
+
+Function: dijkstraShortestPath_vector_Graph__int_
+
+The `dijkstraShortestPath` function takes a graph and a source node as input, and returns a vector of distances from the source node to all other nodes in the graph. The function uses Dijkstra's algorithm to compute the shortest path between the source node and all other nodes in the graph. The distance is represented as an integer value, where a larger value indicates a longer distance. The function uses a priority queue to keep track of the nodes that need to be processed, and it updates the distances for each node based on the weights of its neighbors.
+
+Function: determinant
+
+The function `determinant` takes a matrix as input and returns its determinant. If the matrix is not square, it prints an error message to stderr and returns 0. Otherwise, it calls the recursive function `determinant_recursive` to compute the determinant of the matrix.
+
+Function: runGraphDemo_void__
+
+The `runGraphDemo_void__` function creates a graph with 9 nodes and adds edges between some of them. It then uses the `dijkstraShortestPath` function to find the shortest path from node 0 to all other nodes in the graph, and prints the distances to each node.
+
+Function: get_element
+
+The get_element function returns the element at row r and column c of a matrix m, or 0.0 if the indices are out of bounds.
+
+Function: free_matrix
+
+The function `free_matrix` takes a matrix object as an argument and frees the memory allocated for its data field using the `free()` function from the standard library.
+
+Function: print_matrix
+
+The print_matrix function takes a Matrix object as an argument and prints its elements to the console in a 2D table format.
+
+Function: Order._clinit_
+
+The Order._clinit_ function initializes the static fields of the Order class, including the orderId, customerId, items, status, totalAmount, shippingAddress, and isPriority.
+
+Function: create_matrix
+
+The `create_matrix` function creates a matrix with the specified number of rows and columns, and returns it. It does this by allocating memory for the matrix using `malloc`, and then initializing the matrix's fields to the appropriate values. If the allocation fails, the function prints an error message and exits with a non-zero status code.
+
+Function: multiply_matrices
+
+The `multiply_matrices` function takes two matrices as input and returns their matrix product. The function first checks if the number of columns in the first matrix matches the number of rows in the second matrix, and if not, it prints an error message to standard error and returns an empty matrix. If the dimensions match, the function creates a new matrix with the same number of rows as the first matrix and the same number of columns as the second matrix. It then iterates over each element of the product matrix and sets its value to the dot product of the corresponding elements of the input matrices.
+
+Function: processOrders_string_std.vector__
+
+The function `processOrders` takes a vector of orders as input and processes them. It performs the following steps for each order:
+
+1. Validates the inventory for the order by checking if all items are available in the inventory. If any item is not available, it skips the order.
+2. Reserves stock for the order by updating the reserved stock quantity for each item in the inventory.
+3. Calculates the subtotal for the order by multiplying the price per unit of each item with its quantity.
+4. Applies discounts to the order based on the subtotal and the order's priority status.
+5. Calculates tax for the order based on the shipping address region.
+6. Updates the total amount for the order by adding the tax to the subtotal.
+7. Finalizes the order by "deducting" the reserved stock from the inventory and updating the order's status to "SHIPPED".
+8. Logs a summary of the processed orders, including the number of processed orders, failed orders, and total revenue.
+
+Function: determinant_recursive
+
+The `determinant_recursive` function calculates the determinant of a matrix using a recursive approach. It first checks if the input matrix is square and has at least one element, then it proceeds to calculate the determinant by iterating over each column of the matrix and calculating the determinant of the submatrix obtained by removing that column. The function returns the calculated determinant.
+
+Function: reconstructPath_vector_Graph__std.vector__int_int_
+
+The function `reconstructPath` takes in a graph, a vector of distances, a source node, and a target node as input, and returns the shortest path from the source to the target node in the graph. The function uses Dijkstra's algorithm to compute the shortest distance between each node in the graph and the source node, and then uses this information to reconstruct the shortest path from the target node to the source node. If no path exists between the source and target nodes, the function returns an empty vector.
+
+Time spent: 11.62933087348938
+Functions analyzed: 15
